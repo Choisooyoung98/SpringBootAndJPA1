@@ -24,4 +24,5 @@ public class Member {
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
+    //컬렉션은 필드에서 초기화하는 것이 null 문제에서 안정하다.
 }
