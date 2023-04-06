@@ -37,7 +37,7 @@ public class ItemController {
         return "redirect:/items";
     }
 
-    @PostMapping("items")
+    @GetMapping("items")
     public String list(Model model) {
         model.addAttribute("items", itemService.findItems());
         return "items/itemList";
